@@ -2,12 +2,63 @@
 
 <head>
 
+    <style>
+        .btn{
+            background-color : green ; 
+            font-size : 18px;
+            margin-top : 20px ; 
+            padding : 8px 15px 8px 15px ;
+            color : white ; 
+            border : none ; 
+            border-radius : 5px ;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            transition: all 0.3s ;
+            margin-bottom: 20px;
+        }
+
+        .btn:hover {
+            background-color : rgb(43, 53, 43) ; 
+            transform: scale(1.1);
+        }
+    </style>
+
 </head>
 
 
 <body>
-    <h1 id="hello" class="hello1 test"> Hello World </h1>
-    <button id="btn">Click Me</button>
+    <div>
+        <span style="color : red ; ">
+           Miniumum : 
+        </span>
+        <span>
+            <input id="min" />
+        </span>
+    </div>
+
+    <div>
+        <span style="font-size : 20px">
+            Maximum :    
+        </span>
+        <span>
+            <input id="max" />
+        </span>
+    </div>
+    
+    <button class="btn" id="random">
+        Random
+    </button>
+
+    <div>
+        <span>
+            Result 
+            <span id="result">0</span> 
+        </span>
+    </div>
+
+
+
+
+
     <script src="script.js"></script>
 
 </body>

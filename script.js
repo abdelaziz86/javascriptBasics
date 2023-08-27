@@ -56,17 +56,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //=========================================
 var btn = document.getElementById("btn");
-btn.addEventListener("click", function () {
-    // var h1 = document.getElementById("hello");
-    // h1.textContent = "Goodbye";
-
-    document.getElementById("hello").textContent = "Goodbye";
+// btn.addEventListener("click", function () {
+//     document.getElementById("hello").textContent = "Goodbye";
+// })
 
 
 
-    // document.getElementById("hello") = "goodbye"; 
-    // h1.textContent = "Goodbye"; 
-})
+// =========== fucntion random ===========
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) ;
+}
+
+
+
+// =========== EXERCICE 1 ============ 
+var random = document.getElementById("random");
+
+random.addEventListener("click", function () {
+    var min = document.getElementById("min").value ;
+    console.log("Minimum is : " + min); 
+    
+    var max = document.getElementById("max").value;
+    console.log("Maximum is : " + max); 
+
+    console.log(getRandomNumber(min, max)); 
+    //var result = document.getElementById("result");
+    
+    document.getElementById("result").textContent = getRandomNumber(min, max);  
+}); 
+
+
+
+
+
 
 
 
